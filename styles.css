@@ -1,0 +1,24 @@
+ul{
+    list-style-type: none;
+}
+li{
+    margin:4px;
+}
+button{
+    color: aliceblue;
+    border: none;
+    font-size:large;
+    background-color:rgb(132, 166, 228);
+    border-radius: 6px;
+    cursor: pointer;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 10px;
+}
+header{
+    border-bottom: 1px solid #ccc;
+}
