@@ -3,49 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
   <title>To Do List</title>
+
+  <!-- استایل‌ها -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-  
-  <ul class="list">
-    <li><button class="nav-btn" data-page="index.html">All</button></li>
-    <li><button class="nav-btn" data-page="personal.html">Personal</button></li>
-    <li><button class="nav-btn" data-page="wishlist.html">Wishlist</button></li>
-    <li><button class="nav-btn" data-page="birthday.html">Birthday</button></li>
-  </ul>
-  <div class="logo">
-   <button>
-    <img src="images/Picsart_25-07-22_16-09-02-653.png" alt=logo" style="width: 20px; height: 20px;">
-   </button>
-  </div>
+    <ul class="list">
+      <li><button class="nav-btn" data-page="index.html">All</button></li>
+      <li><button class="nav-btn" data-page="personal.html">Personal</button></li>
+      <li><button class="nav-btn" data-page="wishlist.html">Wishlist</button></li>
+      <li><button class="nav-btn" data-page="birthday.html">Birthday</button></li>
+    </ul>
+
+    <!--  لوگو در سمت راست یا چپ -->
+    <div class="logo">
+      <button>
+        <img src="images/Picsart_25-07-22_16-09-02-653.png" alt="logo" style="width: 20px; height: 20px;" />
+      </button>
+    </div>
   </header>
+
+  <!-- دکمه شناور پایین صفحه + گزینه‌ها -->
   <div class="fab-container">
-  <button class="fab" id="mainFab">+</button>
-  <div class="fab-options" id="fabOptions">
-    <button class="fab-option">Add a Task</button>
-    <button class="fab-option">Task Reminder</button>
-    <button class="fab-option">Add a Habit</button>
+    <button class="fab" id="mainFab">+</button>
+    <div class="fab-options" id="fabOptions">
+      <button class="fab-option">Add a Task</button>
+      <button class="fab-option">Task Reminder</button>
+      <button class="fab-option">Add a Habit</button>
+    </div>
   </div>
-</div>
-<div class="task-popup" id="taskPopup">
-  <div class="task-form">
-    <h3>Add a Task</h3>
-    <input type="text" id="taskInput" placeholder="Input new Task here!">
-    
-    <select id="categorySelect">
-      <option value="all">All</option>
-      <option value="personal">Personal</option>
-      <option value="wishlist">Wishlist</option>
-      <option value="birthday">Birthday</option>
-    </select>
 
-    <button id="addTaskBtn">Send</button>
+  <!-- فرم پاپ‌آپ برای افزودن تسک -->
+  <div class="task-popup" id="taskPopup">
+    <div class="task-form">
+      <h3>Add a Task</h3>
+
+      <!--  ورودی متن -->
+      <input type="text" id="taskInput" placeholder="Input new Task here!" />
+
+      <!-- انتخاب دسته -->
+      <select id="categorySelect">
+        <option value="all">All</option>
+        <option value="personal">Personal</option>
+        <option value="wishlist">Wishlist</option>
+        <option value="birthday">Birthday</option>
+      </select>
+
+      <button id="addTaskBtn">Send</button>
+    </div>
   </div>
-</div>
 
-  
+  <!--  نمایش تسک‌ها -->
+  <div id="taskContainer"></div>
+
+  <!--  اسکریپت‌ها -->
   <script src="script.js"></script>
 </body>
 </html>
+

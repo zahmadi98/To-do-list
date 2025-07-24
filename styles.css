@@ -110,3 +110,25 @@ header{
   border-radius: 8px;
   border: 1px solid #ccc;
 }
+.task-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e8f0ff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+}
+.task-box span {
+  flex: 1;
+  margin-left: 10px;
+}
+.task-box input[type="checkbox"] {
+  transform: scale(1.2);
+}
+.task-box button {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
