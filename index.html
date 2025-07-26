@@ -29,8 +29,8 @@
   <div class="fab-container">
     <button class="fab" id="mainFab">+</button>
     <div class="fab-options" id="fabOptions">
-      <button class="fab-option">Add a Task</button>
-      <button class="fab-option">Task Reminder</button>
+      <button class="fab-option" id="addTaskBtnFab">Add a Task</button>
+    <button class="fab-option" id="reminderBtnFab">Task Reminder</button>
       <button class="fab-option">Add a Habit</button>
     </div>
   </div>
@@ -58,6 +58,15 @@
   <!--  نمایش تسک‌ها -->
   <div id="taskContainer"></div>
 
+<!-- فرم تنظیم Reminder (در ابتدا مخفی) -->
+<div class="reminder-popup" id="reminderPopup" style="display: none;">
+  <div class="reminder-form">
+    <h3>Set a Reminder</h3>
+    <input type="datetime-local" id="reminderDatetime">
+    <button id="setReminderBtn">Set Reminder</button>
+  </div>
+</div>
+<audio id="alarmSound" src="alarm.mp3" preload="auto"></audio>
   <!--  اسکریپت‌ها -->
   <script src="script.js"></script>
 </body>
